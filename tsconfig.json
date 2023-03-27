@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true, // позволяет работать с пакетами, которые используют commonjs как с обычными пакетами с помощью import. (require() module.export) = commonJs
+    "allowSyntheticDefaultImports": true, // Если какая-либо библиотека не имеет default import, лоадеры вроде ts-loadre или babel-loader автоматически создают их. И вместо импорта с звездочкой можно использовать обычный
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+}
